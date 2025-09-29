@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>
+ARTICLE- LIFE
+</title>
+</head>
+<body bgcolor="#D2B48C">
+
+<a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;
+<a href="Page2.html">BOOKS</a>&nbsp;&nbsp;&nbsp;
+<a href="Page3.html">LESSONS</a>&nbsp;&nbsp;&nbsp;
+<a href="Page4.php">MEDITATION</a>&nbsp;&nbsp;&nbsp;
+<a href="Page5.php">THINKINGS</a>&nbsp;&nbsp;&nbsp;
+<a href="Page6.html">QUOTES</a>
+<br>
+<br>
+
+<center>
+<h1>LESSONS</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYF1Iwjig3K5N5y8OkrmgyFhaZdFL9rSoB8w&usqp=CAU" style="width:500px;height:300px;"></center>
+<p>The  <b>Length </b> of the word "LIFE" is:</p>
+<p id="demo"></p>
+<p>The  <b>Slice </b> of string "Enjoy, Your, Life" from char 6 to 18 is:</p>
+<p id="demo1"></p>
+<p> <b>Replace </b> "Make" with "Be" in the paragraph below:</p>
+
+<button onclick="myFunction2()">Try it</button>
+
+<p id="demo2">Always Make Happy</p>
+<p> <b>Replace all  </b>occurrences of "Others" with "Yourselves" in the paragraph below:</p>
+
+<button onclick="myFunction3()">Try it</button>
+
+<p id="demo3">Make Others Happy <br> Make Others Feel good <br> Think by  Others Point of view</p>
+<p>Convert string <b> to upper case </b>:</p>
+
+<button onclick="myFunction4()">Try it</button>
+
+<p id="demo4">the greatest glory in living lies not in never falling, but in rising every time we fall</p>
+<p>Convert string <b> to lower case</b>:</p>
+
+<button onclick="myFunction5()">Try it</button>
+
+<p id="demo5">ALWAYS REMEMBER THAT YOU ARE ABSOLUTELY UNIQUE. JUST LIKE EVERYONE ELSE</p>
+<p> <b>Concatating</b> string</p>
+String 1 = "The future belongs to those";<br>
+String 2 = "who believe in the beauty of their dreams.";<br>
+<p>Combining Strings 1 and 2:</p>
+
+<p id="demo6"></p>
+<p> <b>Trimming</b>  string "Life is what happens when you're busy making other plans"</p>
+<p id="demo9"></p>
+<p><b>Splitting </b>first array element in string "Life,is,easy"</p>
+<p id="demo11"></p>
+
+<script>
+let text = "LIFE";
+document.getElementById("demo").innerHTML = text.length;
+let text1 = "Enjoy, Your, Life";
+let part = text1.slice(6,18);
+document.getElementById("demo1").innerHTML = part; 
+function myFunction2() {
+  let text2 = document.getElementById("demo2").innerHTML;
+  document.getElementById("demo2").innerHTML =
+  text2.replace("Make","Be");
+}
+function myFunction3() {
+  let text3 = document.getElementById("demo3").innerHTML; 
+  document.getElementById("demo3").innerHTML =
+  text3.replace(/Others/g,"Yourselves");
+}
+function myFunction4() {
+  let text4 = document.getElementById("demo4").innerHTML;
+  document.getElementById("demo4").innerHTML =
+  text4.toUpperCase();
+}
+function myFunction5() {
+  let text5 = document.getElementById("demo5").innerHTML;
+  document.getElementById("demo5").innerHTML =
+  text5.toLowerCase();
+}
+let text6 = "The future belongs to those";
+let text7 = "who believe in the beauty of their dreams.";
+let text8 = text6.concat(" ",text7);
+document.getElementById("demo6").innerHTML = text8;
+let text9 = " Life is what happens when you're busy making other plans";
+let text10 = text9.trim();
+
+document.getElementById("demo9").innerHTML =
+"Length text9 = " + text9.length + "<br>Length text10 = " + text10.length;
+let text11 = "Life,is,easy";
+const myArray = text11.split(",");
+document.getElementById("demo11").innerHTML = myArray[0];
+</script>
+
+
+</body>
+</html>

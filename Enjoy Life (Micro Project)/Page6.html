@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ARTICLE- LIFE</title>
+</head>
+
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+<style> 
+#panel1, #flip1 {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel1 {
+  padding: 50px;
+  display: none;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#flip1").click(function(){
+    $("#panel1").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel1").stop();
+  });
+});
+
+</script>
+
+<body bgcolor="#D2B48C">
+<a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;
+<a href="Page2.html">BOOKS</a>&nbsp;&nbsp;&nbsp;
+<a href="Page3.html">LESSONS</a>&nbsp;&nbsp;&nbsp;
+<a href="Page4.php">MEDITATION</a>&nbsp;&nbsp;&nbsp;
+<a href="Page5.php">THINKINGS</a>&nbsp;&nbsp;&nbsp;
+<a href="Page6.html">QUOTES</a>
+<br>
+<br>
+
+<center><h1>QUOTES</h1></center>
+<center><img src="https://www.shutterstock.com/image-photo/enjoy-simple-things-be-grateful-260nw-1889741473.jpg" style="width:500px;height:300px;">   </center>
+<font size="05">
+With all of its ups and downs, the journey of life is one that is not easily summed up in words. But luckily for you, our list of inspirational life quotes is filled with powerful sayings and musings from famous people from all walks of life who have found a way to whittle down the unique lived experiences that make us who we are into a few sentences and phrases.
+On this list you will find beautiful and short quotes that reflect on the things that mean most in life, including sayings about family and incredible messages about friendships.
+You’ll also find deep and even sometimes sad quotes that will help you to put life into perspective. 
+Happy quotes that will encourage you to find the beauty in life's most mundane moments are also included. 
+Whether you’re looking for positive quotes to inspire you to move forward, quotes that give you peace or wise words that will help you navigate a significant life change or transition, we have it all spelled out right here.
+<p>The way to get started is to quit talking and begin doing. -Walt Disney<br>
+If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+<br>
+<br>
+<br>
+
+ 
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. -Oprah Winfrey</div>
+
+
+ <br>
+<br>
+<button id="stop">Stop Sliding</button>
+
+<div id="flip1">Click to slide down panel</div>
+<div id="panel1">If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. -James Cameron</div>
+</font>
+
+</body>
+</html>
