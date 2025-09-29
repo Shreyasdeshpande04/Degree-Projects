@@ -1,0 +1,82 @@
+}
+.wrapper{
+  display: flex;
+   background-color: white;
+   margin-bottom: 100px;
+   margin-left: 40px;
+   margin-right: 400px;
+   font-family: "Comic Sans MS"
+}
+.wrapper .static-txt{
+    background-color:   white;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Comic Sans MS"
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+     background-color:  white;
+     font-family: "Comic Sans MS"
+}
+.dynamic-txts li{
+  list-style: none;
+  color: green;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  color:    white;
+     background-color:  white;
+  animation: slide 12s steps(0) infinite;
+}
+@keyframes slide {
+  100%{
+    top: 60px;
+
+      background-color:   white;
+  }
+   background-color:  white;
+}
+.dynamic-txts li span{
+      background-color:   white;
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+      background-color:   white;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 150%;
+  width: 100%;
+ 
+  border-left: 2px solid  white;
+  animation: typing 8s steps(30) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.change_content:after{
+  content:  '';
+  animation: changetext 10s infinite linear;
+  color:  white;
+  font-family:Times
+}
+
+@keyframes changetext{
+  0%{content:"POPULAR       DESTINATIONS";}
+  25%{content:"ADVENTURE    DESTINATIONS ";}
+  50%{content:"PILGRIM   DESTINATIONS";}
+  75%{content:"HISTORIC   DESTINATIONS";}
+  100%{content:"WILDLIFE     DESTINATIONS";}
+  
+}
