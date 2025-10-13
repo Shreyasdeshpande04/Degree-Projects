@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "142750371953",
+    "project_id": "farmflow-1f4b7",
+    "storage_bucket": "farmflow-1f4b7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142750371953:android:579acd8df22413eb860bd0",
+        "android_client_info": {
+          "package_name": "com.adminapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx27KsMU7bVOBp5p74NflRDM3u919IlfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142750371953:android:fc649e282afe8338860bd0",
+        "android_client_info": {
+          "package_name": "com.farmtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx27KsMU7bVOBp5p74NflRDM3u919IlfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
